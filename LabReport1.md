@@ -17,7 +17,18 @@ VScode will serve as the primary IDE for this class, and we'll use it to input a
 
 ***Important!!!** If not done already, install Java on your device!*  
 
-# Connecting the 
+# Connecting to the CSE Basement server <br> 
+There are essentially 3 steps in this process, which include downloading git, activating your CSE15 account, and finally logging in.
+
+## How to install git 
+- go to https://gitforwindows.org/ 
+- download and follow the instructions of the installer 
+- After installation, the Git BASH terminal should be available in VScode, under terminal options 
+
+![image](https://user-images.githubusercontent.com/122556045/212165742-8378faf3-fb48-4bf9-9756-3d5d88c36d03.png) 
+
+## Activating your CSE15L account
+
 
 
 
