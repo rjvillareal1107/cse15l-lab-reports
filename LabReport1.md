@@ -57,7 +57,7 @@ and your career, for now here are some basic commands:
 - *cat (path1)(path2)*... **Prints out the contents of one or more files given by the paths** 
 - *ls (path)* **"List" Used to list the files and folders of a given path** 
 - *pwd* **"Print working directory" Used to display the current working directory** 
-- *cd (path)* **"Change directory" Used to switch the current working directory to the given path 
+- *cd (path)* **"Change directory" Used to switch the current working directory to the given path**
 
 Since we are in the a public CSE Basement server, one thing that's useful to try is getting access to the text of a 
 public file. In this case we can access it by using the cat commmand on the path /home/linux/ieng6/cs15lwi23/public/hello.txt 
