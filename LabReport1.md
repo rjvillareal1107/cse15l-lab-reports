@@ -47,7 +47,7 @@ Your CSE15L account needs to be properly activated in order to succesfully log i
   previously updated your password in the steps above, simply enter what password you currently have 
   on your account. 
 - If everything was done correctly, you should get a screen like this 
-![image](https://user-images.githubusercontent.com/122556045/212214566-2c864f17-34fd-40c1-bc45-1ba4b9e5ecbc.png) 
+![image](https://user-images.githubusercontent.com/122556045/212214566-2c864f17-34fd-40c1-bc45-1ba4b9e5ecbc.png) <br>
 **From here we can start enterning commands**. 
 
 # Terminal command excersizes 
