@@ -36,7 +36,28 @@ Your CSE15L account needs to be properly activated in order to succesfully log i
 - You'll find your CSE15L username in the following page under "additional accounts". 
 (All CSE15L accounts start with "cs15lwi23") 
 - Click on the account, in the resulting page, there will be a prompt allowing you to set a password. 
-- After resetting your password, your account is ready to go! 
+- After resetting your password, your account is ready to go!  
+
+## Logging into CSE Basement 
+- Once you enter the terminal, enter the command *ssh yourusername@ieng6.ucsd.edu* 
+![image](https://user-images.githubusercontent.com/122556045/212213553-12150c28-b898-41a2-a411-99c4001fdc35.png)
+- Following this you'll get a message like the one below, simply put, answer yes. 
+![image](https://user-images.githubusercontent.com/122556045/212213887-2d20a329-7c87-4365-8be3-8a0679391dd6.png) 
+- After answering yes, you'll be prompted to enter your account password, if you already 
+  previously updated your password in the steps above, simply enter what password you currently have 
+  on your account. 
+- If everything was done correctly, you should get a screen like this 
+![image](https://user-images.githubusercontent.com/122556045/212214566-2c864f17-34fd-40c1-bc45-1ba4b9e5ecbc.png) 
+**From here we can start enterning commands**. 
+
+# Terminal command excersizes 
+You can input a variety of commands into the terminal, you'll learn more throughout the course of this class 
+and your career, for now here are some basic commands: 
+
+
+
+
+
 
 
 
