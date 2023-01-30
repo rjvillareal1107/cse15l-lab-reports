@@ -9,7 +9,7 @@ Here's a quick tutorial on how to get started with CSE15L. Steps include:
 # Downloading VScode <br> 
 VScode will serve as the primary IDE for this class, and we'll use it to input a variety of terminal commands later. 
 
-- First, download VSCode online 
+- First, download VSCode online [VScode link](https://code.visualstudio.com/)
 - Then, follow the instructions of the installer. 
 - When you open VScode, it should take you to a welcome menu not unlike the image below, you can now open files, access terminals, and edit code. 
 
@@ -21,7 +21,7 @@ VScode will serve as the primary IDE for this class, and we'll use it to input a
 There are essentially 3 steps in this process, which include downloading git, activating your CSE15L account, and finally logging in.
 
 ## How to install git 
-- go to https://gitforwindows.org/ 
+- go to [Git Install Link](https://gitforwindows.org/) 
 - download and follow the instructions of the installer 
 - After installation, the Git BASH terminal should be available in VScode, under terminal options 
 
@@ -30,7 +30,7 @@ There are essentially 3 steps in this process, which include downloading git, ac
 
 ## Activating your CSE15L account 
 Your CSE15L account needs to be properly activated in order to succesfully log in. 
-- First go to https://sdacs.ucsd.edu/~icc/index.php 
+- First go to [Account Lookup](https://sdacs.ucsd.edu/~icc/index.php) 
 - Log in with your UCSD credentials. 
 ![image](https://user-images.githubusercontent.com/122556045/212212541-54a06c3f-4bce-43dc-9cb1-072fc61569c0.png) 
 - You'll find your CSE15L username in the following page under "additional accounts". 
@@ -39,7 +39,7 @@ Your CSE15L account needs to be properly activated in order to succesfully log i
 - After resetting your password, your account is ready to go!  (You may have to wait a few minutes for your new password to properly process)
 
 ## Logging into CSE Basement 
-- Once you enter the terminal, enter the command *ssh yourusername@ieng6.ucsd.edu* <br>
+- Once you enter the terminal, enter the command `ssh yourusername@ieng6.ucsd.edu` <br>
 ![image](https://user-images.githubusercontent.com/122556045/212213553-12150c28-b898-41a2-a411-99c4001fdc35.png)
 - Following this you'll get a message like the one below, simply put, answer yes. 
 ![image](https://user-images.githubusercontent.com/122556045/212213887-2d20a329-7c87-4365-8be3-8a0679391dd6.png) 
@@ -54,10 +54,10 @@ Your CSE15L account needs to be properly activated in order to succesfully log i
 You can input a variety of commands into the terminal, you'll learn more throughout the course of this class 
 and your career, for now here are some basic commands:  
 
-- *cat (path1)(path2)*... **Prints out the contents of one or more files given by the paths** 
-- *ls (path)* **"List" Used to list the files and folders of a given path** 
-- *pwd* **"Print working directory" Used to display the current working directory** 
-- *cd (path)* **"Change directory" Used to switch the current working directory to the given path**
+- `cat (path1)(path2)` **Prints out the contents of one or more files given by the paths** 
+- `ls (path)` **"List" Used to list the files and folders of a given path** 
+- `pwd` **"Print working directory" Used to display the current working directory** 
+- `cd (path)` **"Change directory" Used to switch the current working directory to the given path**
 
 Since we are in the a public CSE Basement server, one thing that's useful to try is getting access to the text of a 
 public file. In this case we can access it by using the cat commmand on the path /home/linux/ieng6/cs15lwi23/public/hello.txt 
