@@ -19,29 +19,53 @@ There are 2 methods, one in each class of the java file.**
 
 ### main 
 - This method produces a link given a port number (which you include when running the code).  
-- The link takes the user to a localhost site, where the above handleRequest method takes requests from the user given the right URI path
+- The link takes the user to a localhost site, where the above handleRequest method takes requests from the user given the right URI path 
+
+#### main (examples) 
+
+Example 1: 
+
+![image](https://user-images.githubusercontent.com/122556045/218584499-658288e2-fd19-4965-8575-0ee768334e74.png)
+- Running the server properly requires running the file with a portnumber (as specified in the actual code) This should create a usable URL that directs the user to a webpage that follows the behavior of the handleRequest method. 
+![image](https://user-images.githubusercontent.com/122556045/218584955-0dd22aab-8560-4545-8d73-652cb7a405c2.png)
+- Since "/addMessage" isn't part of the URL path, as the implementation of handleRequest entails, a "404 not found" message will be printed. This is because the conditional in the handleRequest method checks for "/addMessage" 
+
+Example 2: <br> 
+
+![image](https://user-images.githubusercontent.com/122556045/218586219-0d34e1b2-e145-46f6-b33e-3c5dfc08987a.png)
+- Let's say we want to add a message to the webpage. we'd simply include "add-message" in the URL path and create a query including whatever message we would like. In this case let's use the phrase "Don't forget to practice for the skill demo" (Which in the context for this class is quite a good reminder). <br>
+ ![image](https://user-images.githubusercontent.com/122556045/218586916-ab06f02a-f7df-4e07-990f-6ed08d0b0d6b.png)
+- This creates a webpage with our message in it, thus demonstrating the proper behavior of the handleRequest method
 
 # Part 2 (Failure Inducing Inputs)
 In the initial code of the `ArrayExamples` class, due to a bug in the `reverseInPlace` method,  
 a failure inducing input includes trying to run the method on an array with 5 elements such as `[1,2,3,4,5]`    
-Example: <br>
-` @Test 
+Example: <br> 
+
+```
+ @Test 
   public void testReverseInPlace2() { 
     int[] input = {1,2,3,4,5}; 
     ArrayExamples.reverseInPlace(input); 
     assertArrayEquals(new int[]{5,4,3,2,1}, input);
-  } ` 
+  }   
+```
   <br> 
   On the contrary, a test that does not induce a failure is running the method on an array with only 1 element. 
-  Example: <br> 
-  `@Test 
+  Example: <br>  
+
+```
+  @Test 
 	public void testReverseInPlace() {
     int[] input1 = { 3 };
     ArrayExamples.reverseInPlace(input1);
     assertArrayEquals(new int[]{ 3 }, input1);
-	} ` 
+	}  
+```  
+
   ## Symptom 
-  - Originally, we have a problematic symptom in the program, as an element in the array of 5 elements is incorrect 
+  - Originally, we have a problematic symptom in the program, as an element in the array of 5 elements is incorrect  
+  
   ![image](https://user-images.githubusercontent.com/122556045/215592237-8cb276ab-bfcd-4150-a5ca-28da8f08f688.png) 
   
   - Notice that we don't have this error for the array with only one element, this tells us that this method is problematic for arrays with several elements. This helps us in the debugging process. <br> 
@@ -79,10 +103,13 @@ Example: <br>
   
   **This works because the original values are left in tact to copy to a temporary array, allowing for the final array to be properly reversed.** 
   
-  # Part 3 (What I learned) 
-  During this lab I learned 2 new things. 
-  - How to copy github repositories onto the github desktop app (and even on VScode) 
-  - how to commit changes via the terminal
+  # Part 3 (What I learned)  
+  
+  **During this lab I learned 2 new things.**  
+  
+  - How to copy github repositories onto the github desktop app (and even on VScode). In learning to do so, being able to incorporate larger projects into my local system has been made significatly easier, as all the extra work of putting the java files in a working path has been effectively eliminated. This not only allows for a greater degree of efficiency but also streamlines the project as the directory paths are kept consistent with the original repository. Not only that, but changes can be commited and pushed into the main repository when neccesary, which is by all means an essential tool for group related projects. 
+  
+  - how to commit changes via the terminal. This allows not only for changes to be made in the original project, but also for the exact changes to be listed as "commits" for other programmers to see. This entails a greater degree of communication and cooperation in group projects. Having this done from the terminal (assuming the commands are familiarized which they should), doing this takes relatively little time, which is an absolute win in the department of efficiency.
   
 
 
