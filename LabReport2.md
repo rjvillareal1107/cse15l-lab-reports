@@ -76,19 +76,24 @@ Example: <br>
   - Upon further analysis, the issue with the code is that half way through the array, the elements will be set to the currently changed values of the earlier indexes. 
   - For instance, once the loop is at index 4, which is supposed to be changed to the **original** value of index 1 in an array with 5 elements, index 1 will have already been changed to the original index 4 value. Instead of a converstion from `[1,2,3,4,5] ----> [5,4,3,2,1]` as intended, you'll instead get a conversion of `[1,2,3,4,5] ------> [5,4,3,4,5]` 
   
-  **Here's the original code.** <br>
-  `// Changes the input array to be in reversed order
+  **Here's the original code.** <br> 
+  
+  ```
+  // Changes the input array to be in reversed order
   static void reverseInPlace(int[] arr) {  
     for(int i = 0; i < arr.length; i += 1) {
       arr[i] = arr[arr.length - i - 1];
     }     
-  }`
+  } 
+  ```
   
   ### Solution 
   One of many solutions is to declare a placeholder array thats the same size as the original, and copy all of the elements over in reverse order, and then copying the   elements from place holder back to the original array. 
   
-  **Here is the fixed code** 
-  ` // Changes the input array to be in reversed order
+  **Here is the fixed code**   
+  
+  ```
+   // Changes the input array to be in reversed order
   static void reverseInPlace(int[] arr) {   
     int[] placeholder = new int[arr.length]; 
     
@@ -99,7 +104,8 @@ Example: <br>
     for(int i=0; i<arr.length; i++){ 
       arr[i] = placeholder[i];
     } 
-  }` 
+  } 
+  ```
   
   **This works because the original values are left in tact to copy to a temporary array, allowing for the final array to be properly reversed.** 
   
