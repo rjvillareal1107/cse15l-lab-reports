@@ -57,7 +57,7 @@ The same command was executed with the target word "congressional", as we can ob
 In the search for efficient terminal commands I've consulted my colleagues on what they know. 
 I asked if there was a way to grep for a string pattern in all of the files in directory without first having to use the find command and redirect the output on a txt file to grep (which as implied takes significantly longer). The -r modifier was what was reccomended to me, which as a result streamlined the entire process of "grepping" for string patterns (Hurrah for valid peer collaboration) 
 
-## -c pattern 
+## -c Modifier 
 
 Let's say you are only concerned with the quantity of occurances of a single string pattern within a text file but nothing else. Using the grep command normally will print every occurance of the string pattern in the context of the file and if you want to find out the occurances of the pattern you'd have to count that individually. As one can imagine that would be beyond tedious.
 
@@ -97,5 +97,95 @@ As specific as an implementation as this is, it is a testament to the variety of
 
 #### How I found this command 
 
-the sight [geeksforgeeks](https://www.geeksforgeeks.org/grep-command-in-unixlinux/) has a list of several extensions for the grep command complete with descriptions and even some examples. This is useful not only for finding out what commands are available, but also as reference for possible applications and syntax.
+The site [geeksforgeeks](https://www.geeksforgeeks.org/grep-command-in-unixlinux/) has a list of several extensions for the grep command complete with descriptions and even some examples. This is useful not only for finding out what commands are available, but also as reference for possible applications and syntax. 
 
+## -n Modifier 
+
+### Example 1 
+
+The -n Modifier allows the matched lines with the target string pattern to be highlighted, as well as the specific line that the word appears in. 
+
+Input: 
+
+![image](https://user-images.githubusercontent.com/122556045/218664450-5672c2cc-49c9-410a-956b-d34ab67ba6cc.png) 
+
+Output: 
+
+![image](https://user-images.githubusercontent.com/122556045/218664543-3037ed20-b2e2-4dff-90e6-08aca8e73e1b.png)
+
+As you can see, not only is the target string highlighted, but in addition to that, the terminal highlights the line number in which the target string is found. 
+
+**Note: In this case, we combined the -n command with the -r command to do this with multiple files by searching for all associated files recursively. However the -n command can be done alone on a single text file.**
+
+### Example 2: 
+
+We can use the n command on a single text file. 
+
+Input: 
+
+![image](https://user-images.githubusercontent.com/122556045/218665177-10c959ed-bec3-4900-b40c-1d925221d042.png)
+
+Output: 
+
+![image](https://user-images.githubusercontent.com/122556045/218665284-0f08d0a7-519c-49e6-95bb-708c1ed2a48d.png) 
+
+This shows us all of the lines with "Lucayans" in the text file, including their line numbers. 
+
+#### How did I find this command
+
+The site [geeksforgeeks](https://www.geeksforgeeks.org/grep-command-in-unixlinux/) has a list of several extensions for the grep command complete with descriptions and even some examples. This is useful not only for finding out what commands are available, but also as reference for possible applications and syntax.  
+
+## The -o Modifier 
+
+In all of the examples, when matching a text file with a given phrase, the target string is highlighted, but all of the text within the file is printed as well, making for a very cluttered screen full of possibly unnecesary/uneeded information. The -o modifier allows us to print only the matched parts of the txt file.
+
+### Example 1: 
+
+We can print exclusively the matching parts in a single .txt file 
+
+Input: 
+
+![image](https://user-images.githubusercontent.com/122556045/218666931-7232c821-f1dc-45b7-8ab8-1d8024e19d1e.png)
+ 
+ 
+ Output: 
+ 
+ ![image](https://user-images.githubusercontent.com/122556045/218666975-fed1652a-b32f-4e5e-97c6-ce4bc7a81f84.png) 
+ 
+ 
+ As shown above, only the matching lines appear. 
+ 
+ ### Example 2: 
+ 
+ We can do the same command but to multiple files at once by combining modifiers. 
+ 
+ Input: 
+ 
+ ![image](https://user-images.githubusercontent.com/122556045/218667454-dcd1dd5d-3302-49b1-9d53-55d65dc5126c.png)
+ 
+ Output: 
+ 
+ ![image](https://user-images.githubusercontent.com/122556045/218667572-526795a7-6816-40ee-abab-e7d93d258bef.png) 
+ 
+ Combining the -r and -o modifiers prints the matching parts from all applicable files in the given directory.  
+ 
+ #### How did I find this command 
+ 
+ The site [geeksforgeeks](https://www.geeksforgeeks.org/grep-command-in-unixlinux/) has a list of several extensions for the grep command complete with descriptions and even some examples. This is useful not only for finding out what commands are available, but also as reference for possible applications and syntax.   
+ 
+ # Conclusion 
+ 
+ Studying the grep command helped me find a wide range of applications for the command. 
+ -r allows grep to be used on all of the files in the directory, allowing potentially hundreds of files to be searched simultaneously 
+ -c allows us to find out the amount of times a given phrase is used. 
+ -n allows us to display the matched lines along side which numbered line the phrase is on 
+ and -o allows us to print only the matched sections. 
+ 
+ It's also worth noting that the ability to combine these commands opens up the possibility for several more applications, which heavily increases the overall utility 
+ of the grep command. 
+ 
+ Overall, this exersize has stressed the potential that command modifiers have.
+
+ 
+ 
+ 
