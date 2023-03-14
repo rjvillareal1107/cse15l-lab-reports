@@ -98,5 +98,5 @@ The site [geeksforgeeks](https://www.geeksforgeeks.org/find-command-in-linux-wit
 
 ## Summary 
 
-Similar to grep, the find command is made versatile by the use of extensions.
+Similar to grep, the find command is made versatile by the use of extensions, which operate in a variety of different ways.
 
